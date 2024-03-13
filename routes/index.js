@@ -1,6 +1,7 @@
 const routes = require('express').Router();
 const temple = require('./temple');
 
+routes("/", require("./swagger"));
 routes.use('/temples', temple);
 routes.use(
   '/',
